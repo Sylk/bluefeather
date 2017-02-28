@@ -1,0 +1,8 @@
+{
+    "require": {
+        "symfony/console": "^3.2",
+        "team-reflex/discord-php": "^4.0",
+        "abraham/twitteroauth": "^0.7.2",
+        "vlucas/phpdotenv": "^2.4"
+    }
+}
