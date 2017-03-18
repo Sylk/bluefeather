@@ -1,5 +1,5 @@
 # BlueFeather
-A discord bot that sits on your server and when someone mention @botsname it reads the message and tweets the user mess out to  the designated twitter account.
+A discord bot that sits on your server and when someone mention @botsname it reads the message and tweets the user message out to the designated twitter account.
 
 It must be run on the command line to get the bot to respond.
 
