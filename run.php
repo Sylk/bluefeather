@@ -11,8 +11,6 @@ define('CONSUMER_SECRET', getenv('CONSUMER_SECRET'));
 define('ACCESS_TOKEN', getenv('ACCESS_TOKEN'));
 define('ACCESS_TOKEN_SECRET', getenv('ACCESS_TOKEN_SECRET'));
 
-
-
 $discord = new \Discord\Discord([
     'token' => getenv('DISCORD_TOKEN'),
 ]);
@@ -41,12 +39,10 @@ $discord->on('ready', function ($discord) {
                 $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET);
                 $content = $connection->get("account/verify_credentials");
                 $statuses = $connection->post("statuses/update", ["status" => $messageContent]);
-//                }
+                }
             }
-
         }
     });
-
 });
 
 $discord->run();
